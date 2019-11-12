@@ -1,14 +1,31 @@
 <!DOCTYPE html>
 <html>
   <head lang="en">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Weathered</title>
-    <link rel="shortcut icon" href="/favicon.ico">
-    <link rel="stylesheet" href="/screen.css">
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="stylesheet" href="/screen.css" />
   </head>
   <body>
-    <h1 class='hello-world'></h1>
+    <header><h1 class="header-title">How is the weather?</h1></header>
+
+    <main>
+      <nav class="search-bar">
+        <section><h2>Search location</h2></section>
+        <section class="search-input-section">
+          <input
+            placeholder="Show the weather in...city or zip"
+            type="text"
+            class="search-input"
+          />
+          <button class="search-btn">Search</button>
+        </section>
+      </nav>
+      <section class="display-weather-section" id="weather-section">
+        <h1>The API results will be displayed here.</h1>
+      </section>
+    </main>
     <script src="/main.js" charset="utf-8"></script>
   </body>
 </html>
