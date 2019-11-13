@@ -7,11 +7,18 @@ html {
 }
 
 body {
-  margin: 0;
+  margin: 0.5rem;
   min-height: 100%;
+  background-image: url('images/blue_sky_wp.jpg');
+  background-color: #7d7dee;
 }
 
+.header-title {
+  font: 4rem /1 serif;
+  text-align: center;
+}
 .search-bar {
+  margin: 1rem;
   display: flex;
   justify-content: space-around;
   align-items: center;

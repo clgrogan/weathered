@@ -1,8 +1,11 @@
 const main = () => {
   // openweathermap.org KEY: bdb29d22e5632a99066f7973fed663ad
+  // 20191112140353
+  // https://api.openweathermap.org/data/2.5/weather?q=Tampa&appid=bdb29d22e5632a99066f7973fed663ad
+  // by zip without country
+  // https://samples.openweathermap.org/data/2.5/weather?zip=94040&appid=b6907d289e10d714a6e88b30761fae22
 
-  // If there is a URL for a prior search stored, fetch and display.
-  // Else if Geolocation is available get the location
+  // If there is a URL for a prior search stored, fetch and display. Else if Geolocation is available get the location
   if (typeof localStorage.apiURL !== 'undefined') {
     console.log('LOCAL STORED: ', localStorage.apiURL)
     fetchWeatherLocalStorage(localStorage.apiURL)
